@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  isMobile: boolean = false;
+
   constructor() { }
   ngOnInit(): void {
-
+    if (window.screen.width === 360) { // 768px portrait
+      this.isMobile = true;
+    }
   }
 
 }
