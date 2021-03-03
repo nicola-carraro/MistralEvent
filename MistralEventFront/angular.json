@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "MistralEventFront"
+  "defaultProject": "MistralEventFront",
+  "cli": {
+    "analytics": false
+  }
 }

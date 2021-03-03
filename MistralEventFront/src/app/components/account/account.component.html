@@ -1,0 +1,42 @@
+<div>
+
+    <!-- Affichage avatar + possibilité d'uploader une nouvelle image -->
+    <div class="card">
+        <div class="card-header">
+          Changer votre mot de passe
+        </div>
+        <div class="card-body">
+            <img src="https://sdk.bitmoji.com/render/panel/e09b6e67-e890-4746-9111-0f4c2de77dec-3b2c02fc-42ed-492f-a1af-c74e8be4c112-v1.png?transparent=1&palette=1" alt="Avatar" class="avatar-large" />
+        </div>
+    </div>
+
+    <!-- Form pour changer le mot de passe -->
+    <div class="card">
+        <div class="card-header">
+          Changer votre mot de passe
+        </div>
+        <div class="card-body">
+            <form id="changePasswordform" role="form" (ngSubmit)="changePassword()">
+                <div style="mb-3">
+                    <label for="old-password" class="form-label">Votre mot de passe actuel</label>
+                    <input id="old-password" formControlName="old-password" type="password" class="form-control" name="old-password">
+                </div>
+
+                <div style="mb-3">
+                    <label for="new-password" class="form-label">Votre nouveau mot de passe</label>
+                    <input id="new-password" formControlName="new-password" type="password" class="form-control" name="new-password">
+                </div>
+
+                <div style="mb-3">
+                    <label for="new-password-2" class="form-label">Répéter votre nouveau mot de passe</label>
+                    <input id="new-password-2" formControlName="new-password-2" type="password" class="form-control" name="new-password-2">
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-success "><i class="fas fa-sign-in-alt"></i> Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
