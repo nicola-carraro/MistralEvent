@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AccountComponent } from './components/account/account.component';
+import { CreditComponent } from './components/credit/credit.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    AccountComponent
+    AccountComponent,
+    CreditComponent
   ],
   imports: [
     BrowserModule,

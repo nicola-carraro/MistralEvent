@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAt, faSave } from '@fortawesome/free-solid-svg-icons';
+import { faFileUpload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-account',
@@ -8,8 +8,7 @@ import { faAt, faSave } from '@fortawesome/free-solid-svg-icons';
 })
 export class AccountComponent implements OnInit {
   
-  atIcon = faAt;
-  saveIcon = faSave;
+  uploadIcon = faFileUpload;
 
   constructor() { }
 
