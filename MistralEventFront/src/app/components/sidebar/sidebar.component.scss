@@ -1,31 +1,65 @@
 @media screen and (min-width: 200px) and (max-width: 375px) {
-  .mobileNavbar {
-    position: fixed;
-    z-index: 1001;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: gainsboro;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    .navbar-item {
-      width: 20%;
-    }
+  .tabletNavbar {
+    display: none;
   }
   .webNavbar {
     display: none;
   }
 }
-@media screen and (min-width: 376px) {
-  .mobileNavbar {
+
+@media screen and (max-width: 576px) {
+  .tabletNavbar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 2;
+  }
+  .webNavbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .tabletNavbar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 2;
+  }
+  .webNavbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .webNavbar {
+    height: 100%;
+    width: 234px;
+    position: fixed;
+    z-index: 2;
+  }
+  .tabletNavbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tabletNavbar {
     display: none;
   }
   .webNavbar {
     height: 100%;
     width: 234px;
-    background-color: green !important;
-    position: fixed;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .webNavbar {
+    height: 100%;
+    width: 234px;
+    position: absolute;
+    z-index: 2;
   }
 }

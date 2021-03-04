@@ -10,19 +10,3 @@
 
 .profile-mail {
 }
-
-@media screen and (min-width: 200px) and (max-width: 375px) {
-  .container {
-    background-color: olive !important;
-  }
-}
-
-@media screen and (min-width: 376px) {
-  .container {
-    background-color: olive !important;
-    margin-left: 233px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}

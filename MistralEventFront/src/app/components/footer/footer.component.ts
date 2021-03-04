@@ -3,11 +3,11 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { faCalendar, faCog, faDoorOpen, faFilm, faGlassCheers, faMapSigns } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   calendarAltIcon = faCalendarAlt;
   glassCheersIcon = faGlassCheers;
@@ -16,6 +16,7 @@ export class SidebarComponent implements OnInit {
   exitIcon = faDoorOpen;
 
   constructor() { }
+
   ngOnInit(): void {
   }
 
