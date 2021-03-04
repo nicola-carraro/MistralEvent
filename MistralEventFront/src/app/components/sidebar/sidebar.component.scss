@@ -1,7 +1,7 @@
-
 @media screen and (min-width: 200px) and (max-width: 375px) {
   .mobileNavbar {
     position: fixed;
+    z-index: 1001;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -14,18 +14,18 @@
       width: 20%;
     }
   }
-  .webNavbar{
+  .webNavbar {
     display: none;
   }
 }
 @media screen and (min-width: 376px) {
-  .mobileNavbar{
+  .mobileNavbar {
     display: none;
   }
   .webNavbar {
-    clear:both;
+    height: 100%;
+    width: 234px;
+    background-color: green !important;
+    position: fixed;
   }
-}
-#wrapper{
-  height: 100%;
 }

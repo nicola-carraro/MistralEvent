@@ -1,13 +1,28 @@
 /* Profile */
 .profile-avatar {
-    width: 100%;
+  width: 100%;
 }
 
 .profile-title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .profile-mail {
+}
 
+@media screen and (min-width: 200px) and (max-width: 375px) {
+  .container {
+    background-color: olive !important;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    background-color: olive !important;
+    margin-left: 233px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }

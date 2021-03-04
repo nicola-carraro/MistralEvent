@@ -1,30 +1,19 @@
-<div>
 
-  <div class="d-flex" id="wrapper">
-          <div *ngIf="isMobile; then thenBlock else elseBlock"></div>
-            <ng-template #thenBlock>
-              <div class=" footer" >  
-                <a href="#" class=" footer-item list-group-item list-group-item-action"><fa-icon [icon]="calendarAltIcon"></fa-icon></a>
-                <a href="#" class=" footer-item list-group-item list-group-item-action "><fa-icon [icon]="glassCheersIcon"></fa-icon></a>
-                <a href="#" class=" footer-item list-group-item list-group-item-action"><fa-icon [icon]="mapSignsIcon"></fa-icon></a>
-                <a href="#" class=" footer-item list-group-item list-group-item-action "><fa-icon [icon]="cogIcon"></fa-icon></a>
-                <a href="#" class=" footer-item list-group-item list-group-item-action "><fa-icon [icon]="exitIcon"></fa-icon></a>
-              </div>
-            </ng-template>
-            <ng-template #elseBlock>         
-              <div class="bg-light border-right" id="sidebar-wrapper">
-                <div class="sidebar-heading">
-                  Mistral Event
-                </div>
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item list-group-item-action ">Voir les évènements à venir</a>
-                  <a href="#" class="list-group-item list-group-item-action ">Gérer son compte</a>
-                  <a href="#" class="list-group-item list-group-item-action ">Déconnexion</a>
-                </div>
-              </div>
-            </ng-template>
+    <div class="bg-light border-right webNavbar" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          Mistral Event
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action ">Voir les évènements à venir</a>
+          <a routerLink="account" class="list-group-item list-group-item-action ">Gérer son compte</a>
+          <a href="#" class="list-group-item list-group-item-action ">Déconnexion</a>
+        </div>
     </div>
 
-
-
-</div>    
+    <div class="mobileNavbar" >  
+      <a href="#" class=" navbar-item list-group-item list-group-item-action"><fa-icon [icon]="calendarAltIcon"></fa-icon></a>
+      <a href="#" class=" navbar-item list-group-item list-group-item-action "><fa-icon [icon]="glassCheersIcon"></fa-icon></a>
+      <a href="#" class=" navbar-item list-group-item list-group-item-action"><fa-icon [icon]="mapSignsIcon"></fa-icon></a>
+      <a href="#" class=" navbar-item list-group-item list-group-item-action "><fa-icon [icon]="cogIcon"></fa-icon></a>
+      <a href="#" class=" navbar-item list-group-item list-group-item-action "><fa-icon [icon]="exitIcon"></fa-icon></a>
+    </div>
