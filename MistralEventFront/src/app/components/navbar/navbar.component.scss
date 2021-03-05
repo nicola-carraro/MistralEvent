@@ -12,16 +12,13 @@
 .header-accueil a {
   background-color: #154194;
   color: white;
-  font-size: 1.5rem;
 }
 a:hover {
   color: #5bc5f1 !important ;
   text-decoration: none;
 }
-
 @media screen and (min-width: 200px) and (max-width: 375px) {
-  .navbar{
-    position: fixed;
+  .navbar {
     left: 0;
     top: 0;
     width: 100%;
@@ -29,20 +26,30 @@ a:hover {
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 
 @media screen and (min-width: 376px) {
-  .navbar{
-    position: fixed;
-    left: 233px;
+  .navbar {
+    left: 0;
     top: 0;
     width: 100%;
     background-color: #154194;
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 1.5rem;
   }
 }
