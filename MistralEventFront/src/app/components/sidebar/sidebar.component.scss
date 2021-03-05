@@ -64,25 +64,35 @@
   }
 }
 
-.sidebar-heading{
+.sidebar-heading {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.5rem;
   height: 36px;
+  img {
+    margin: 5px 0;
+  }
 }
 
-#profilSidebar{
+.profilSidebar {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  img{
+  img {
     border-radius: 50%;
     max-width: 80%;
     margin-bottom: 20px;
     align-self: center;
   }
-  h3{
+  h3 {
     text-align: center;
+  }
+}
+.tabletNavbar {
+  .list-group-flush {
+    a {
+      text-align: center;
+    }
   }
 }
