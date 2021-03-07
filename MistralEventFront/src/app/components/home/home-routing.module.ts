@@ -4,6 +4,7 @@ import { AccountComponent } from '../account/account.component';
 import { CreditComponent } from '../credit/credit.component';
 import { AgendaComponent } from '../agenda/agenda.component';
 import { HomeComponent } from './home.component';
+import { UpcomingEventsComponent } from '../upcomingEvents/upcomingEvents.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'account', component: AccountComponent },
       { path: 'credit', component: CreditComponent },
       { path: 'agenda', component: AgendaComponent },
+      { path: 'upcommingEvent', component: UpcomingEventsComponent },
     ],
   },
 ];

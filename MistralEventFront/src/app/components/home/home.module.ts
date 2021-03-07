@@ -10,6 +10,8 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home.component';
+import { EventCardComponent } from '../EventCard/eventCard.component';
+import { UpcomingEventsComponent } from '../upcomingEvents/upcomingEvents.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HomeComponent } from './home.component';
     AccountComponent,
     CreditComponent,
     FooterComponent,
-    AgendaComponent
+    AgendaComponent,
+    EventCardComponent,
+    UpcomingEventsComponent
   ],
   imports: [
     CommonModule,
