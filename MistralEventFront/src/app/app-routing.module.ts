@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AccountComponent } from './components/account/account.component';
-import { AgendaComponent } from './components/agenda/agenda.component';
-import { CreditComponent } from './components/credit/credit.component';
 
 const routes: Routes = [
-  { path: 'account', component: AccountComponent },
-  { path: 'credit', component: CreditComponent },
-  { path: 'agenda', component: AgendaComponent}
+  // { path: 'login', component: LoginComponent },
+  {
+    path: 'home',
+    // canActivate: [ProtectedGuard],
+    loadChildren: () =>
+      import('./components/home/home.module').then((m) => m.HomeModule),
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
