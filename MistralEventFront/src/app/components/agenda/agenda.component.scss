@@ -1,0 +1,24 @@
+.card {
+  min-width: 300px;
+  max-width: 30%;
+  margin: 20px 30px;
+  .card-informations {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .btn-card-agenda {
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin: 0 15px;
+      width: 120px;
+      padding: auto;
+    }
+  }
+}
+.cardList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

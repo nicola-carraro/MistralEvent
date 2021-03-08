@@ -9,6 +9,7 @@ import { AccountComponent } from './components/account/account.component';
 import { CreditComponent } from './components/credit/credit.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
+import { AgendaComponent } from './components/agenda/agenda.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SidebarComponent,
     AccountComponent,
     CreditComponent,
-    FooterComponent
+    FooterComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
