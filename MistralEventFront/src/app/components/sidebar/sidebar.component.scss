@@ -1,4 +1,4 @@
-@import '../../../assets/styles/variables.scss';
+@import "../../../assets/styles/variables.scss";
 
 @media screen and (min-width: 200px) and (max-width: 375px) {
   .tabletNavbar {
@@ -72,7 +72,7 @@
   font-size: 1.5rem;
   height: 36px;
   img {
-    margin: 5px 0;
+    margin: 5px 15px;
   }
 }
 
@@ -102,4 +102,7 @@
 .active-link {
   background-color: $mainColor;
   color: white;
+}
+#applicationNameSidebar {
+  margin: auto;
 }
