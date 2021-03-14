@@ -15,6 +15,7 @@ export class CreateEventComponent implements OnInit {
  streetAddressControl = new FormControl('', Validators.required)
  cityControl = new FormControl('', Validators.required)
  datetimeControl = new FormControl([Validators.required])
+ descriptionControl = new FormControl()
  now = new Date().toISOString().substring(0, 16)
 
  locations = [
@@ -28,7 +29,8 @@ export class CreateEventComponent implements OnInit {
     locationName: this.locationNameControl,
     streetAddress: this. streetAddressControl,
     city: this. cityControl,
-    datetime: this. datetimeControl
+    datetime: this.datetimeControl,
+    description: this.descriptionControl
   });
 
   getLocationById(id: string){
